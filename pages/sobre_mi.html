@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Sobre mi</title>
+</head>
+<body>
+    <!-- ==== Navbar ==== -->
+    <nav class="navBar">
+        <h3 class="logo">Clow <span>Ming</span></h3>
+        <ul class="nav-links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a class="active" href="sobre_mi.html">Sobre mi</a></li>
+            <li><a href="equipo.html">Equipo</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a class="ctn" href="contacto.html">Contacto</a></li>
+        </ul>
+        <img  class="menu-btn" src="../assets/img/menu-btn.png" alt="boton menu Mobile" >
+    </nav>
+    <!--  ====== Header ====== -->
+    <header class="bg1">
+        <div class="header-content">
+            <h3>Nosotro lo hacemos por vos</h3>
+            <div class="line"></div>
+            <h2>Clow <span>Ming</span></h2>
+        </div>
+    </header>
+    <!-- ===== sections ===== -->
+    <section class="master">
+        <div class="title">
+            <h2>Sobre mi</h2>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="../assets/img/pic4.png" alt="Foto de Perfil">
+            </div>
+        <div class="row">
+            <div class="col">
+                <h4>Muestra.</h4>
+                <p class="space"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquam earum ab voluptatem fuga et dolor dolores doloremque nobis, voluptate facere minima officia iusto odio? Vitae aspernatur eum inventore blanditiis!
+                Velit id tenetur aperiam placeat dolores iure est pariatur inventore similique amet nihil, nesciunt accusamus laudantium, consequatur nulla ut doloribus soluta deleniti quis molestias repudiandae? Porro ipsam sit dicta vel.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="video">
+        <video src="../assets/img/vid1.webm" width="75%" alt="Video de Muestra" controls></video>
+    </section>
+
+    <div class="cards">
+        <div class="card5 card1">
+            <div class="container2">
+                <img class="fotoGrid" src="../assets/img/img6.png" width="100%" alt="las vegas">
+            </div>
+            <div class="details">
+                <h3>Muestra</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p>
+            </div>
+        </div>
+        <div class="card5 card2">
+            <div class="container2">
+                <img class="fotoGrid" src="../assets/img/img5.png" width="100%" alt="New York">
+            </div>
+            <div class="details">
+                <h3>Muestra</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p>
+            </div>
+        </div>
+        <div class="card5 card3">
+            <div class="container2">
+                <img class="fotoGrid" src="../assets/img/img3.png" width="100%" alt="Singapore">
+            </div>
+            <div class="details">
+                <h3>Muestra</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="muestras">
+        <div class="row">
+            <div class="col">
+                <h1>Trabajos</h1>
+                <p class="space">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A.</p>
+            </div>
+            <div class="col imagenes">
+                <div class="galeriaImg">
+                    
+                    <img class="item" src="../assets/img/img3.png" alt="Imagen de muestra">
+                    <img class="item" src="../assets/img/img4.png" alt="Imagen de muestra">
+                    <img class="item" src="../assets/img/img5.png" alt="Imagen de muestra">
+                    <img class="item" src="../assets/img/img6.png" alt="Imagen de muestra">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ==== Footer ==== -->
+    <footer>
+        <article class="redesft">
+            <a href="#"><img src="../assets/img/redes/instagram.png" alt="instagram" width="25"/></a>
+            <a href="#"><img src="../assets/img/redes/facebook.png" alt="facebook" width="25"/></a>
+            <a href="#"><img src="../assets/img/redes/twitter.png" alt="twitter" width="25"/></a>
+            <a href="#"><img src="../assets/img/redes/twitch.png" alt="twtich" width="25"/></a>
+            <a href="#"><img src="../assets/img/redes/youtube.png " alt="youTube" width="25"/></a>
+        </article>
+        
+        <article>
+            <p class="colorFooter">
+                © Todos los derechos reservados ClowMing
+            </p>
+        </article>
+    </footer>
+    <!-- ====Script media query==== -->
+    <script>
+        const menuBtn = document.querySelector ('.menu-btn')
+        const navlinks = document.querySelector ('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>

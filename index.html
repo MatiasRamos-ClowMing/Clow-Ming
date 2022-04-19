@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Inicio</title>
+</head>
+<body>
+    <!-- ==== Navbar ==== -->
+    <nav class="navBar">
+        <h3 class="logo">Clow <span>Ming</span></h3>
+        <ul class="nav-links">
+            <li><a  class="active" href="index.html">Inicio</a></li>
+            <li><a href="pages/sobre_mi.html">Sobre mi</a></li>
+            <li><a href="pages/equipo.html">Equipo</a></li>
+            <li><a href="pages/servicios.html">Servicios</a></li>
+            <li><a class="ctn" href="pages/contacto.html">Contacto</a></li>
+        </ul>
+        <img  class="menu-btn" src="assets/img/menu-btn.png" alt="boton menu Mobile" >
+    </nav>
+    <!--  ====== Header ====== -->
+    <header>
+        <div class="header-content">
+            <h3>Nosotro lo hacemos por vos</h3>
+            <div class="line"></div>
+            <h2>Clow <span>Ming</span></h2>
+        </div>
+    </header>
+    <!-- ===== sections ===== -->
+    <section class="master">
+        <div class="title">
+            <h2>Eventos</h2>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <video width="75%" height="200%" loop autoplay controls src="assets/img/vid1.webm" alt="Video Muestra"></video>
+            </div>
+        <div class="row">
+            <div class="col">
+                <img src="assets/img/bg2.png" width="120%" alt="Muestra diseño">
+                <h4>Muestra.</h4>
+                <p class="space">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, maiores!</p>
+            </div>
+        </div>
+    </section>
+        <!-- ===img animado=== -->
+    <section>
+        <div class="container">
+            <div class="card">
+                <div class="img">
+                    <img src="assets/img/2.jpg"  alt="Foto diseño grafico">
+                </div>
+                <div class="content">
+                    <p class="space">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt eligendi error deleniti hic eaque sequi nemo?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <div class="img">
+                    <img src="assets/img/11.jpg"  alt="Foto desarrollo Web">
+                </div>
+                <div class="content">
+                    <p class="space">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt eligendi error deleniti hic eaque sequi nemo? 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <div class="img">
+                    <img src="assets/img/4.jpg"  alt="Foto Edicion de video">
+                </div>
+                <div class="content">
+                    <p class="space">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt eligendi error deleniti hic eaque sequi nemo?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="card5 card1">
+                <div class="container2">
+                    <img class="fotoGrid" src="assets/img/img6.png" width="100%" alt="las vegas">
+                </div>
+                <div class="details">
+                    <h3>Muestra</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p>
+                </div>
+            </div>
+            <div class="card5 card2">
+                <div class="container2">
+                    <img class="fotoGrid" src="assets/img/img5.png" width="100%" alt="New York">
+                </div>
+                <div class="details">
+                    <h3>Muestra</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p>
+                </div>
+            </div>
+            <div class="card5 card3">
+                <div class="container2">
+                    <img class="fotoGrid" src="assets/img/img3.png" width="100%" alt="Singapore">
+                </div>
+                <div class="details">
+                    <h3>Muestra</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p>
+                </div>
+            </div>
+            <div class="card5 card4">
+                <div class="container2">
+                    <img class="fotoGrid" src="assets/img/img4.png" width="100%" alt="Singapore">
+                </div>
+                <div class="details">
+                    <h3>Muestra</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==== Footer ==== -->
+
+    <footer>
+        <article class="redesft">
+            <a href="#"><img src="assets/img/redes/instagram.png" alt="instagram" width="25"/></a>
+            <a href="#"><img src="assets/img/redes/facebook.png" alt="facebook" width="25"/></a>
+            <a href="#"><img src="assets/img/redes/twitter.png" alt="twitter" width="25"/></a>
+            <a href="#"><img src="assets/img/redes/twitch.png" alt="twtich" width="25"/></a>
+            <a href="#"><img src="assets/img/redes/youtube.png " alt="youTube" width="25"/></a>
+        </article>
+
+        <article>
+            <p class="colorFooter">
+                © Todos los derechos reservados ClowMing
+            </p>
+        </article>
+    </footer>
+    <!-- ====Script media query==== -->
+    <script>
+        const menuBtn = document.querySelector ('.menu-btn')
+        const navlinks = document.querySelector ('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>

@@ -229,7 +229,12 @@ p .space{
     align-items: center;
     justify-content: center;
 }
-
+.row 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .cards{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
@@ -525,23 +530,14 @@ h5 {
 }
 /* ============================== */
 /* ===Footer=== */
-footer{
-    width: 100%;
-    height: 100px;
-    padding: 20px 80px;
-    margin-top: 60px;
+.footer {
     text-align: center;
+    font-size: 0.9rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
-.redesft{
-    display: flex;
-    padding: auto;
-    text-align: center;
-    justify-content: space-between;
-}
-.colorFooter{
-    color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.py-4 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
 }
 
 /* ====Menu nav mobile==== */

@@ -105,9 +105,22 @@ header{
     margin-bottom: 30px;
 }
 /* ====secciones=== */
+section .master{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 section{
     width: 80%;
-    margin: 80px auto;
+    margin: 80px;
+    
+}
+
+section .imagenAnimado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 .title{
     text-align: center;
@@ -137,7 +150,7 @@ h4{
     margin: 20px auto;
 }
 
-.col .space{
+.col1 .space{
     color: #525151;
     padding: 0px 40px;
 }
@@ -149,7 +162,8 @@ p .space{
 .containerM{
     position: relative;
     width: 350px;
-    display: inline-block;
+    display: inline-flex;
+
     justify-content: center;
     
     align-items: center;
@@ -224,6 +238,19 @@ p .space{
     margin-top: -5px;
 }
 /* ==== sobre mi ==== */
+#galeria .col-lg-4
+{
+    margin: 0 !important;
+    padding: 25px;
+}
+#galeria img{
+    width: 100%;
+    height: 250px;
+}
+#galeria img:hover{
+    border: 5px solid whitesmoke;
+}
+
 .video{
     display: flex;
     align-items: center;
@@ -234,6 +261,13 @@ p .space{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.card{
+    width: 18rem;
+    height: 310px;
+}
+.clod-md-4 .card img:hover{
+    border: 5px solid whitesmoke;
 }
 .cards{
     display: grid;
@@ -534,10 +568,19 @@ h5 {
     text-align: center;
     font-size: 0.9rem;
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: #131f37;
 }
 .py-4 {
     padding-top: 1.5rem !important;
     padding-bottom: 1.5rem !important;
+}
+.text-lg-start
+{
+    color: whitesmoke;
+}
+.text-lg-end a
+{
+    color: whitesmoke;
 }
 
 /* ====Menu nav mobile==== */

@@ -280,6 +280,10 @@ p .space{
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(0,0,0,0.18);
 }
+.container2 .card5 .card2 {
+    width: 50%;
+    height: 50%;
+}
 .container2{
     position: relative;
     clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);

@@ -159,6 +159,12 @@ p .space{
     padding: 0px 40px;
 }
 
+#facilites{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .containerM{
     position: relative;
     width: 350px;
@@ -582,6 +588,7 @@ h5 {
 {
     color: whitesmoke;
 }
+
 
 /* ====Menu nav mobile==== */
 .menu-btn{

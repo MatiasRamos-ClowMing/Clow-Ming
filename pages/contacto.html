@@ -7,6 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../js/script.js">
     <link rel="stylesheet" href="../styles/styles.css">
     <title>Contacto</title>
 </head>
@@ -150,11 +153,60 @@
     <!-- ==fin contacto== -->
     </main>
 
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img class="d-block w-100" src="../assets/img/computers-3.png" alt="First slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="../assets/img/computers-2.png" alt="Second slide">
+        </div>
+    </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
     <!-- ==== Footer ==== -->
-    <footer class="footer py-4">
+    <footer class="footer py-4 mx-auto">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-4 text-lg-start">Copyright &copy; ClowMing 2022</div>
+                <!-- <div class="col-lg-4 my-3 my-lg-0">
+                    
+                </div> -->
+                <div class="col-lg-4 text-lg-end">
+                    <a class="link-dark text-decoration-none" data-toggle="modal" href="#exampleModal" >Privacy Policy</a>
+                    <a class="link-dark text-decoration-none" data-toggle="modal" href="#exampleModal">Terms of Use</a>
+                </div>
+            
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta maxime vel labore sint sed quod sunt nam laudantium, sapiente maiores cupiditate voluptate, illo quasi porro perferendis consectetur, minus accusamus culpa?
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="aceptar">aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
@@ -173,5 +225,7 @@
         })
     </script>
     
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </body>
 </html>

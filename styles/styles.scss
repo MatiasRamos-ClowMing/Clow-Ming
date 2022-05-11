@@ -1,5 +1,13 @@
 /* Prueba de version para git */
 
+$colores:(
+    "blanco" : white,         "grisc2" : #484872,     "BlancoC" : #dfe9ed,
+    "rosacl" : #fc036b,       "blanc3" : #e2e2e4,     "grisR" : #333,
+    "blanco2" :#ffffff,       "negro" : #111,         "violetaO" : #66337f,
+    "humblanco" :whitesmoke,  "azulos" : #1c1b29,     "grisN":#353434,
+    "rosar" :#fc036b,         "grisclaro" : #a0a0a0,  "rojo" : red,
+    "grisc" : #49497e,        "azulcla" : #131f37,    "grisM":#525151,
+);
 
 *{
     margin: 0;
@@ -10,7 +18,7 @@
 
 a{
     text-decoration: none;
-    color: white;
+    color: map-get($colores , "blanco" );
     
 }
 
@@ -19,12 +27,12 @@ ul{
 }
 
 .active{
-    color: #fc036b;
+    color: map-get($colores, "rosacl" );
     text-decoration: underline;
 }
 
 a:hover{
-    color: #ffffff;
+    color: map-get($colores, "blanco2" );
 }
 
 body, html{
@@ -40,7 +48,7 @@ body, html{
     width: 100%;
     justify-content: space-between;
     padding: 20px;
-    color: whitesmoke;
+    color: map-get($colores, "humblanco" );
 }
 
 .nav-links{
@@ -54,7 +62,7 @@ body, html{
 
 li .ctn{
     padding: 8px 15px;
-    background: #fc036b;
+    background: map-get($colores, "rosacl" );
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -79,7 +87,7 @@ header{
 
 .header-content{
     margin-bottom: 150px;
-    color: whitesmoke;
+    color: map-get($colores, "humblanco" );
     text-align: center;
 }
 
@@ -90,7 +98,7 @@ header{
 .line{
     width: 100px;
     height: 2px;
-    background: #fc036b;
+    background: map-get($colores, "rosacl" );
     margin: 10px auto;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -125,7 +133,7 @@ section .imagenAnimado{
 .title{
     text-align: center;
     font-size: 4vmin;
-    color: #49497e;
+    color: map-get($colores, "grisc" );
 }
 
 .row1{
@@ -146,16 +154,16 @@ section .imagenAnimado{
 
 h4{
     font-size: 3vmin;
-    color: #484872;
+    color: map-get($colores, "grisc2" );
     margin: 20px auto;
 }
 
 .col1 .space{
-    color: #525151;
+    color: map-get($colores, "grisM" );
     padding: 0px 40px;
 }
 p .space{
-    color: #353434;
+    color: map-get($colores, "grisN" );
     padding: 0px 40px;
 }
 
@@ -191,7 +199,7 @@ p .space{
     position: relative;
     max-width: 320px;
     height: 215px;
-    background: #e2e2e4;
+    background: map-get($colores, "blanc3" );
     margin: 15px 15px;
     padding: 4px 10px;
     display: flex;
@@ -228,7 +236,7 @@ p .space{
     margin-top: -260;
     padding: 10px 15px;
     text-align: center;
-    color: #111;
+    color: map-get($colores, "negro" );
     visibility: hidden;
     opacity: 0;
     transition: 0.3s ease-in-out;
@@ -254,7 +262,7 @@ p .space{
     height: 250px;
 }
 #galeria img:hover{
-    border: 5px solid whitesmoke;
+    border: 5px solid map-get($colores, "humblanco" );
 }
 
 .video{
@@ -273,7 +281,7 @@ p .space{
     height: 310px;
 }
 .clod-md-4 .card img:hover{
-    border: 5px solid whitesmoke;
+    border: 5px solid map-get($colores, "humblanco" );
 }
 .cards{
     display: grid;
@@ -282,7 +290,7 @@ p .space{
     grid-gap: 40px;
 }
 .card5{
-    background-color: #1c1b29;
+    background-color: map-get($colores, "azulos" );
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(0,0,0,0.18);
 }
@@ -341,13 +349,13 @@ img .fotoGrid{
     padding: 20px 10px;
 }
 .details>h3{
-    color: #ffffff;
+    color: map-get($colores, "blanco2" );
     font-weight: 600;
     font-size: 18px;
     margin: 10px 0 15px 0;
 }
 .details>p{
-    color: #a0a0a0;
+    color: map-get($colores, "grisclaro" );
     font-size: 15px;
     line-height: 30px;
     font-weight: 400;
@@ -425,13 +433,13 @@ h2{
 {
     display: flex;
     justify-content: center;
-    color: #131f37;
+    color: map-get($colores, "azulcla" );
     font-weight: 200;
     font-size: 8vmin;
 }
 
 .locations{
-    color: whitesmoke;
+    color: map-get($colores, "humblanco" );
 }
 h5 {
     color: rgb(6, 6, 6);
@@ -462,7 +470,7 @@ h5 {
 }
 
 .inputBox span{
-    color: #dfe9ed;
+    color: map-get($colores, "BlancoC" );
     margin-top: 10px;
     margin-bottom: 5px;
     font-weight: 500;
@@ -472,21 +480,21 @@ h5 {
     padding: 10px;
     font-size: 18px;
     outline: none;
-    border: 1px solid #333;
+    border: 1px solid map-get($colores, "grisR" );
 }
 
 .inputBox select{
     padding: 10px;
     font-size: 18px;
     outline: none;
-    border: 1px solid #333;
+    border: 1px solid map-get($colores, "grisR" );
 }
 
 .inputBox textarea{
     padding: 10px;
     font-size: 18px;
     outline: none;
-    border: 1px solid #333;
+    border: 1px solid map-get($colores, "grisR" );
     resize: none;
     min-height: 220px;
     margin-bottom: 10px;
@@ -518,7 +526,7 @@ h5 {
 /* seccion info de contacto */
 
 .info h5{
-    color: whitesmoke;
+    color: map-get($colores, "humblanco" );
 }
 .info .infoBox div {
     display: flex;
@@ -528,7 +536,7 @@ h5 {
 .info .infoBox div span{
     min-width: 40px;
     height: 40px;
-    color: whitesmoke;
+    color: map-get($colores, "humblanco" );
     background-color: #66337f;
     display: flex;
     justify-content: center;
@@ -542,18 +550,18 @@ h5 {
     margin-right: 15px;
 }
 .info .infoBox div p{
-    color: whitesmoke;
+    color: map-get($colores, "humblanco" );
     font-size: 1.1em;
 }
 .info .infoBox div a{
-    color: whitesmoke;
+    color: map-get($colores, "humblanco" );
     text-decoration: none;
     font-size: 1.1em;
 }
 
 .socialMedia{
     font-size: 3em;
-    color:#66337f;
+    color: map-get($colores, "violetaO" );
     margin-top: 90px;
     display: flex;
     margin-right: 15px;
@@ -586,11 +594,14 @@ h5 {
 }
 .text-lg-start
 {
-    color: whitesmoke;
+    color: map-get($colores, "humblanco" );
 }
 .text-lg-end a
 {
-    color: whitesmoke;
+    color: map-get($colores, "humblanco" );
+}
+.colorRojo{
+    color: map-get($colores, "red" );
 }
 
 

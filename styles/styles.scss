@@ -8,7 +8,12 @@ $colores:(
     "rosar" :#fc036b,         "grisclaro" : #a0a0a0,  "rojo" : red,
     "grisc" : #49497e,        "azulcla" : #131f37,    "grisM":#525151,
 );
-
+$titulos:(
+    h2:50px,
+    h3:3vmin,
+);
+$h2:map-get($titulos , h2);
+$h3:map-get($titulos, h3);
 *{
     margin: 0;
     padding: 0;
@@ -103,7 +108,7 @@ header{
 }
 
 .header-content h3{
-    font-size: 3vmin;
+    font-size: $h3;
 }
 
 .line{
@@ -134,6 +139,7 @@ section{
     margin: 80px;
     
 }
+
 
 section .imagenAnimado{
     display: flex;
@@ -433,8 +439,8 @@ img .fotoGrid{
     }
 }
 .box{
-    grid-template-areas: "form info" "form mapa" ;
-    @include grid(relative,2, 4, 20px, 20px, 40px)
+    grid-template-areas: "form info" "form mapa";
+    @include grid( 2, 5, 20px, 20px, 40px);
     
 }
 // .box{
@@ -455,7 +461,7 @@ h2{
 .contacto h2{
     color: #010101;
     font-weight: 200;
-    font-size: 50px;
+    font-size: $h2;
     text-align: center;
 }
 

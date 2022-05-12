@@ -735,6 +735,10 @@ iframe {
   color: whitesmoke;
 }
 
+.colorRojo {
+  color: red;
+}
+
 /* ====Menu nav mobile==== */
 .menu-btn {
   position: absolute;

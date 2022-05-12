@@ -1,4 +1,9 @@
 /* Prueba de version para git */
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -65,11 +70,6 @@ li .ctn {
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
-}
-
-.carousel-inner img {
-  width: 100%;
-  height: 100%;
 }
 
 header {

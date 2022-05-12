@@ -73,9 +73,9 @@ li .ctn {
 }
 
 header {
-  width: 100vw;
-  height: 100vh;
   background-image: url("../assets/img/header-bg.jpg");
+  width: 100vw;
+  height: 75vh;
   background-position: bottom;
   background-size: cover;
   display: -webkit-box;
@@ -460,15 +460,15 @@ img .fotoGrid {
 }
 
 .form {
-  /* -ms-grid-row: 1; */
+  -ms-grid-row: 1;
   -ms-grid-row-span: 2;
-  /* -ms-grid-column: 1; */
+  -ms-grid-column: 1;
   grid-area: form;
 }
 
 .info {
-  /* -ms-grid-row: 1; */
-  /* -ms-grid-column: 2; */
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: info;
 }
 

@@ -486,24 +486,16 @@ img .fotoGrid {
 
 .box {
       grid-template-areas: "form info" "form mapa";
-  position: 5;
+  position: 1;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (4fr)[2];
-      grid-template-rows: repeat(2, 4fr);
+  -ms-grid-columns: 1;
+      grid-template-columns: 1;
+  -ms-grid-rows: 1;
+      grid-template-rows: 1;
   gap: 20px;
   margin-top: 20px;
   margin-bottom: 40px;
-}
-
-@media screen and (max-width: 480px) {
-  .box {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    gap: 0em;
-  }
 }
 
 h2 {

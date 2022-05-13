@@ -432,20 +432,16 @@ img .fotoGrid{
 @mixin grid($columnas, $ps , $espacio , $mgtp , $mgbt) {
     position: $ps;
     display: grid;
-    grid-template-columns: repeat($columnas , 1fr);
-    grid-template-rows: repeat($columnas , 4fr);
+    grid-template-columns: ($columnas);
+    grid-template-rows: ($columnas);
     gap: $espacio;
     margin-top: $mgtp;
     margin-bottom: $mgbt;
 
-    @media screen and (max-width:480px) {
-        grid-template-columns: 1fr;
-        gap: 0em;
-    }
 }
 .box{
     grid-template-areas: "form info" "form mapa";
-    @include grid( 2, 5, 20px, 20px, 40px);
+    @include grid( 1, 1, 20px, 20px, 40px);
     
 }
 // .box{

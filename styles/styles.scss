@@ -429,7 +429,7 @@ img .fotoGrid{
     box-shadow: 0 5px 35px rgba(0,0,0,0.15);
 }
 
-@mixin grid($columnas, $ps , $espacio , $mgtp , $mgbt) {
+@mixin grid( $columnas, $ps , $espacio , $mgtp , $mgbt) {
     position: $ps;
     display: grid;
     grid-template-columns: ($columnas);
@@ -440,6 +440,8 @@ img .fotoGrid{
 
 }
 .box{
+    // grid-template-columns: 2fr 1fr;
+    // grid-template-rows: 5fr 4fr;
     grid-template-areas: "form info" "form mapa";
     @include grid( 1, 1, 20px, 20px, 40px);
     

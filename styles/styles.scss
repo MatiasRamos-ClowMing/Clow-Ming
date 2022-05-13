@@ -704,32 +704,32 @@ iframe{
     }
     
 }
-// /* contacto */
-// @media (max-width: 992px)
-// {
+/* contacto */
+@media (max-width: 992px)
+{
 
-//     .contacto
-//     {
-//         padding: 20px;
-//     }
-//     .box
-//     {
-//         grid-template-columns: 1fr;
-//         grid-template-rows: auto;
-//         grid-template-areas: "form" "info" "mapa";
-//     }
-//     .mapa
-//     {
-//         min-height: 300px;
-//     }
-//     .formBox .row50
-//     {
-//         display: flex;
-//         gap: 0;
-//         flex-direction: column;
-//     }
-//     .inputBox
-//     {
-//         width: 100%;
-//     }
-// }
+    .contacto
+    {
+        padding: 20px;
+    }
+    .box
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "form" "info" "mapa";
+    }
+    .mapa
+    {
+        min-height: 300px;
+    }
+    .formBox .row50
+    {
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+    .inputBox
+    {
+        width: 100%;
+    }
+}

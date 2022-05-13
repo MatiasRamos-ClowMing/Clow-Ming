@@ -352,7 +352,7 @@ p .space {
 .cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(200px, 1fr));
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding: 20px;
   grid-gap: 40px;
@@ -460,15 +460,15 @@ img .fotoGrid {
 }
 
 .form {
-  /* -ms-grid-row: 1; */
+  -ms-grid-row: 1;
   -ms-grid-row-span: 2;
-  /* -ms-grid-column: 1; */
+  -ms-grid-column: 1;
   grid-area: form;
 }
 
 .info {
-  /* -ms-grid-row: 1;
-  -ms-grid-column: 2; */
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: info;
 }
 
@@ -489,9 +489,9 @@ img .fotoGrid {
   position: 5;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr);
+  -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (4fr);
+  -ms-grid-rows: (4fr)[2];
       grid-template-rows: repeat(2, 4fr);
   gap: 20px;
   margin-top: 20px;
@@ -809,6 +809,36 @@ iframe {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+/* contacto */
+@media (max-width: 992px) {
+  .contacto {
+    padding: 20px;
+  }
+  .box {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "form" "info" "mapa";
+  }
+  .mapa {
+    min-height: 300px;
+  }
+  .formBox .row50 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .inputBox {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

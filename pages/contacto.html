@@ -30,7 +30,7 @@
         <img  class="menu-btn" src="../assets/img/menu-btn.png" alt="boton menu Mobile" >
     </nav>
     <!--  ====== Header ====== -->
-    <header>
+    <header class="contacto-bg">
         <div class="header-content">
             <h3>Nosotros lo hacemos por vos</h3>
             <div class="line"></div>
@@ -44,13 +44,12 @@
     <!-- div de apertura contacto -->
     <div class="contacto">
         <div class="titulo">
-            <h2>Contacto</h2>
+            <h1>Contacto</h1>
         </div>
             <!-- ==Box== -->
         <div class="box">
             <!-- ==inicio form== -->
             <div class="contact form">
-                <h3>Clow Ming</h3>
                 <form action="">
                     <div class="formBox">
 
@@ -95,11 +94,14 @@
                                 <textarea placeholder="Mensaje"></textarea>
                             </div>
                         </div>
-
-                        <div class="row100">
-                            <div class="inputBox">
-                                <input type="submit" value="Enviar">
-                                <input type="reset"  value="Borrar">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <button class="btn btn-danger form-control  btn-block" type="reset">Borrar</button>
+                                </div>
+                                <div class="col">
+                                    <button id="btnSubmit" class="btn btn-primary form-control btn-block" type="submit" (click)="onSubmit()">Enviar</button>
+                                </div>
                             </div>
                         </div>
 
@@ -112,15 +114,15 @@
             <!-- ==incio info== -->
             <div class="contact info">
                 <h3>Redes Sociales</h3>
-                <div class="infoBox">
+                <div class="infoBox justify-content-center">
                     <div>
-                        <span><ion-icon name="location"></ion-icon></span>
+                        <span><ion-icon name="location" class="text-center"></ion-icon></span>
                         <p>Posadas, Misiones, Argentina</p>
                     </div>
 
                     <div>
                         <span><ion-icon name="mail"></ion-icon></span>
-                        <a href="loremipsum@gmail.com">loremipsum@gmail.com</a>
+                        <a href="clowbusinessdesing@gmail.com">clowbusinessdesing@gmail.com</a>
                     </div>
 
                     <div>
@@ -148,7 +150,6 @@
             <!-- ==fin mapa== -->
         </div>
             <!-- ==fin de box== -->
-
     </div>
     <!-- ==div de cierre== -->
     <!-- ==fin contacto== -->
@@ -161,10 +162,10 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <img class="d-block w-100" src="../assets/img/computers-3.png" alt="First slide">
+            <img class="d-block w-100" src="../assets/img/computers-2.jpg" alt="First slide">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="../assets/img/computers-2.png" alt="Second slide">
+            <img class="d-block w-100" src="../assets/img/computers-3.jpg" alt="Second slide">
         </div>
     </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

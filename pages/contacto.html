@@ -4,18 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- funtes google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta name="descripcion" content="Sitio web dedicado al desarrollo web, marketing digital, edicion de video y diseño grafico">
-    <meta name="keywords" content="html, css, diseño, desarrollo, web, edicion de video">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Boostrap 4.6 -->
+    <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" 
+    crossorigin="anonymous">
+    <!-- fin de Boostrap 4.6 -->
+
+    <!-- css y js personalizado -->
     <link rel="stylesheet" href="../js/script.js">
     <link rel="stylesheet" href="../styles/styles.css">
+    <!-- fin de css y js personalizado -->
+
+    <!-- Titulo y SEO -->
     <title>Contacto</title>
+
+        <!-- meta tags -->
+    <meta name="descripcion" 
+    content="Sitio web dedicado al desarrollo web, marketing digital, edicion de video y diseño grafico">
+
+    <meta name="keywords" 
+    content="html, css, diseño, desarrollo, web, edicion de video">
+
+    <meta name="author" content="Ramos Matias Daniel">
+    <meta name="language" content="Spanish" />
+    <meta name="distribution" content="Global" />
+    <meta name="country" content="Argentina" />
+    <!-- fin de meta tags -->
+    <!-- fin de Titulo y seo -->
 </head>
-<!-- este es un comentario para pruba de version en HTML -->
 <body>
     <!-- ==== Navbar ==== -->
     <nav class="navBar">
@@ -32,129 +53,124 @@
     <!--  ====== Header ====== -->
     <header class="contacto-bg">
         <div class="header-content">
-            <h3>Nosotros lo hacemos por vos</h3>
+            <h3>¡Estas a un paso de conseguir lo que necesitas!</h3>
             <div class="line"></div>
             <h2>Clow <span>Ming</span></h2>
         </div>
     </header>
     <!-- ==== Formulario ==== -->
-
     <main>
         <!-- ====inicio contacto==== -->
-    <!-- div de apertura contacto -->
-    <div class="contacto">
-        <div class="titulo">
-            <h1>Contacto</h1>
-        </div>
-            <!-- ==Box== -->
-        <div class="box">
-            <!-- ==inicio form== -->
-            <div class="contact form">
-                <form action="">
-                    <div class="formBox">
-
-                        <div class="row50">
-                            <div class="inputBox">
-                                <span>Nombre</span>
-                                <input type="text" placeholder="Nombre">
-                            </div>
-
-                            <div class="inputBox">
-                                <span>Apellido</span>
-                                <input type="text" placeholder="Apellido">
-                            </div>
-                        </div>
-
-                        <div class="row50">
-                            <div class="inputBox">
-                                <span>Correo</span>
-                                <input type="email" placeholder="Correo@gmail.com">
-                            </div>
-
-                            <div class="inputBox">
-                                <span>telefono</span>
-                                <input type="text" placeholder="+549 3764 123456">
-                            </div>
-
-                            <div class="inputBox">
-                                <Span>Servicio</Span>
-                                <select class="input">
-                                    <option value="0">Selecciones una opción</option>
-                                    <option value="1">Diseño grafico</option>
-                                    <option value="2">Diseño web</option>
-                                    <option value="3">Edicion de video</option>
-                                    <option value="4">Marketing digital</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="row100">
-                            <div class="inputBox">
-                                <span>Mensaje</span>
-                                <textarea placeholder="Mensaje"></textarea>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-                                    <button class="btn btn-danger form-control  btn-block" type="reset">Borrar</button>
-                                </div>
-                                <div class="col">
-                                    <button id="btnSubmit" class="btn btn-primary form-control btn-block" type="submit" (click)="onSubmit()">Enviar</button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </form>
-                <!-- CIERRE -->
+        <div class="contacto">
+            <div class="titulo">
+                <h1>Contacto</h1>
             </div>
-            <!-- ==fin form== -->
+                <!-- ==Box== -->
+            <div class="box">
+                <!-- ==inicio form== -->
+                <div class="contact form">
+                    <form action="">
+                        <div class="formBox">
 
-            <!-- ==incio info== -->
-            <div class="contact info">
-                <h3>Redes Sociales</h3>
-                <div class="infoBox justify-content-center">
-                    <div>
-                        <span><ion-icon name="location" class="text-center"></ion-icon></span>
-                        <p>Posadas, Misiones, Argentina</p>
-                    </div>
+                            <div class="row50">
+                                <div class="inputBox">
+                                    <span>Nombre</span>
+                                    <input type="text" placeholder="Nombre">
+                                </div>
 
-                    <div>
-                        <span><ion-icon name="mail"></ion-icon></span>
-                        <a href="clowbusinessdesing@gmail.com">clowbusinessdesing@gmail.com</a>
-                    </div>
+                                <div class="inputBox">
+                                    <span>Apellido</span>
+                                    <input type="text" placeholder="Apellido">
+                                </div>
+                            </div>
 
-                    <div>
-                        <span><ion-icon name="call"></ion-icon></span>
-                        <a href="tel:+5493765123456">+54 9 3765 123456</a>
-                    </div>
+                            <div class="row50">
+                                <div class="inputBox">
+                                    <span>Correo</span>
+                                    <input type="email" placeholder="Correo@gmail.com">
+                                </div>
 
-                    <ul class="socialMedia">
-                        <li>
-                            <a class="link-dark text-decoration-none" data-toggle="modal" href="#exampleModal"><ion-icon name="logo-instagram"></ion-icon></a>
-                            <a class="link-dark text-decoration-none" data-toggle="modal" href="#exampleModal"><ion-icon name="logo-facebook"></ion-icon></a>
-                            <a class="link-dark text-decoration-none" data-toggle="modal" href="#exampleModal"><ion-icon name="logo-twitter"></ion-icon></a>
-                            <a class="link-dark text-decoration-none" data-toggle="modal" href="#exampleModal"><ion-icon name="logo-twitch"></ion-icon></a>
-                            <a class="link-dark text-decoration-none" data-toggle="modal" href="#exampleModal"><ion-icon name="logo-youtube"></ion-icon></a>
-                        </li>
-                    </ul>
+                                <div class="inputBox">
+                                    <span>telefono</span>
+                                    <input type="text" placeholder="+549 3764 123456">
+                                </div>
+
+                                <div class="inputBox">
+                                    <Span>Servicio</Span>
+                                    <select class="input">
+                                        <option value="0">Selecciones una opción</option>
+                                        <option value="1">Diseño grafico</option>
+                                        <option value="2">Diseño web</option>
+                                        <option value="3">Edicion de video</option>
+                                        <option value="4">Marketing digital</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row100">
+                                <div class="inputBox">
+                                    <span>Mensaje</span>
+                                    <textarea placeholder="Mensaje"></textarea>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <button class="btn btn-danger form-control  btn-block" type="reset">Borrar</button>
+                                    </div>
+                                    <div class="col">
+                                        <button id="btnSubmit" class="btn btn-primary form-control btn-block" type="submit" (click)="onSubmit()">Enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-            </div>
-            <!-- ==fin info== -->
+                <!-- ==fin form== -->
 
-            <!-- ==inicio mapa== -->
-            <div class="contact mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3542.9070448071498!2d-55.88644605328647!3d-27.378618300853674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457bfab023f2f97%3A0x15928e4c691f162c!2sCostanera%20Posadas!5e0!3m2!1ses!2sar!4v1650049821679!5m2!1ses!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- ==incio info== -->
+                <div class="contact info">
+                    <h3>Redes Sociales</h3>
+                    <div class="infoBox justify-content-center">
+                        <div>
+                            <span><ion-icon name="location" class="text-center"></ion-icon></span>
+                            <p>Posadas, Misiones, Argentina</p>
+                        </div>
+
+                        <div>
+                            <span><ion-icon name="mail"></ion-icon></span>
+                            <a href="clowbusinessdesing@gmail.com">clowbusinessdesing@gmail.com</a>
+                        </div>
+
+                        <div>
+                            <span><ion-icon name="call"></ion-icon></span>
+                            <a href="tel:+5493765123456">+54 9 3765 123456</a>
+                        </div>
+
+                        <ul class="socialMedia">
+                            <li>
+                                <a class="link-dark text-decoration-none" data-toggle="modal" href="#exampleModal"><ion-icon name="logo-instagram"></ion-icon></a>
+                                <a class="link-dark text-decoration-none" data-toggle="modal" href="#exampleModal"><ion-icon name="logo-facebook"></ion-icon></a>
+                                <a class="link-dark text-decoration-none" data-toggle="modal" href="#exampleModal"><ion-icon name="logo-twitter"></ion-icon></a>
+                                <a class="link-dark text-decoration-none" data-toggle="modal" href="#exampleModal"><ion-icon name="logo-twitch"></ion-icon></a>
+                                <a class="link-dark text-decoration-none" data-toggle="modal" href="#exampleModal"><ion-icon name="logo-youtube"></ion-icon></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- ==fin info== -->
+
+                <!-- ==inicio mapa== -->
+                <div class="contact mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3542.9070448071498!2d-55.88644605328647!3d-27.378618300853674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457bfab023f2f97%3A0x15928e4c691f162c!2sCostanera%20Posadas!5e0!3m2!1ses!2sar!4v1650049821679!5m2!1ses!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <!-- ==fin mapa== -->
             </div>
-            <!-- ==fin mapa== -->
+                <!-- ==fin de box== -->
         </div>
-            <!-- ==fin de box== -->
-    </div>
-    <!-- ==div de cierre== -->
-    <!-- ==fin contacto== -->
+        <!-- ==fin contacto== -->
     </main>
-
+<!-- inicio Carousel -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -177,19 +193,16 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <!-- ==== Footer ==== -->
+    <!-- fin carousel -->
+<!-- ==== Footer ==== -->
     <footer class="footer py-4 mx-auto">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-4 text-lg-start">Copyright &copy; ClowMing 2022</div>
-                <!-- <div class="col-lg-4 my-3 my-lg-0">
-                    
-                </div> -->
                 <div class="col-lg-4 text-lg-end">
                     <a class="link-dark text-decoration-none" data-toggle="modal" href="#exampleModal" >Privacy Policy</a>
                     <a class="link-dark text-decoration-none" data-toggle="modal" href="#exampleModal">Terms of Use</a>
                 </div>
-            
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
@@ -211,12 +224,13 @@
             </div>
         </div>
     </footer>
+    <!-- fin footer -->
 
-    <!-- ===Script icons=== -->
+<!-- ===Script icons=== -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-    <!-- ====Script media query==== -->
+<!-- ====Script media query==== -->
     <script>
         const menuBtn = document.querySelector ('.menu-btn')
         const navlinks = document.querySelector ('.nav-links')
@@ -225,8 +239,15 @@
         navlinks.classList.toggle('mobile-menu')
         })
     </script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+<!-- ====Script bootstrap==== -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
 </body>
 </html>

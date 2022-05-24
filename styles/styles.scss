@@ -1,19 +1,32 @@
-/* Prueba de version para git */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
-$colores:(
-    "blanco" : white,         "grisc2" : #484872,     "BlancoC" : #dfe9ed, "rosac2":#AC215B,
-    "rosacl" : #fc036b,       "blanc3" : #e2e2e4,     "grisR" : #333,
-    "blanco2" :#ffffff,       "negro" : #111,         "violetaO" : #66337f,
-    "humblanco" :whitesmoke,  "azulos" : #1c1b29,     "grisN":#353434,
-    "rosar" :#fc036b,         "grisclaro" : #a0a0a0,  "rojo" : red,
-    "grisc" : #49497e,        "azulcla" : #131f37,    "grisM":#525151,
-);
-$titulos:(
-    h2:50px,
-    h3:3vmin,
-);
-$h2:map-get($titulos , h2);
-$h3:map-get($titulos, h3);
+// inicio mixin
+@mixin bg ($wth , $hht , $bgp , $bgs , $dis , $align , $just)
+{
+    width: $wth;
+    height: $hht;
+    background-position: $bgp;
+    background-size: $bgs;
+    display: $dis;
+    align-items: $align;
+    justify-content: $just;
+}
+
+@mixin grid( $columnas, $ps , $espacio , $mgtp , $mgbt)
+{
+    position: $ps;
+    display: grid;
+    grid-template-columns: ($columnas, auto);
+    grid-template-rows: ($columnas, auto);
+    gap: $espacio;
+    margin-top: $mgtp;
+    margin-bottom: $mgbt;
+}
 
 @mixin flexbox-column-display(
     $flex-direction: column,
@@ -25,29 +38,43 @@ $h3:map-get($titulos, h3);
     justify-content: $justify-content;
     align-items: $align-items;
 }
+// fin mixin
+
+// variables
+$colores:(
+    "blanco" : white,         "grisc2" : #484872,     "BlancoC" : #dfe9ed, "rosac2":#AC215B,
+    "rosacl" : #fc036b,       "blanc3" : #e2e2e4,     "grisR" : #333,
+    "blanco2" :#ffffff,       "negro" : #111,         "violetaO" : #66337f,
+    "humblanco" :whitesmoke,  "azulos" : #1c1b29,     "grisN":#353434,
+    "rosar" :#fc036b,         "grisclaro" : #a0a0a0,  "rojo" : red,
+    "grisc" : #49497e,        "azulcla" : #131f37,    "grisM":#525151,
+);
+
+$titulos:(
+    h2:50px,
+    h3:3vmin,
+);
+
+$h2:map-get($titulos , h2);
+$h3:map-get($titulos, h3);
 
 %f-prop{
     width: 100%;
     height: 100%;;
-    }
+}
+// fin de variables
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+body, html{
+    overflow-x: hidden;
+    background-image: linear-gradient(to right top, #394960, #313f54, #293448, #212a3d, #192132);
 }
-h1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: map-get($colores, "humblanco" );
-}
+
 a{
     text-decoration: none;
     color: map-get($colores , "blanco" );
 }
 
+// navbar
 ul{
     list-style: none;
 }
@@ -59,12 +86,6 @@ ul{
 
 a:hover{
     color: map-get($colores, "blanco2" );
-}
-
-body, html{
-    overflow-x: hidden;
-    background-image: linear-gradient(to right top, #394960, #313f54, #293448, #212a3d, #192132);
-    /* overflow-x: scroll; */
 }
 
 .navBar{
@@ -97,26 +118,30 @@ li .ctn{
     -o-border-radius: 30px;
 }
 
-.carousel-inner img {
-    @extend %f-prop;
+.line{
+    width: 100px;
+    height: 2px;
+    background: map-get($colores, "rosacl" );
+    margin: 10px auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
+// fin navbar
 
-@mixin bg ($wth , $hht , $bgp , $bgs , $dis , $align , $just){
-    width: $wth;
-    height: $hht;
-    background-position: $bgp;
-    background-size: $bgs;
-    display: $dis;
-    align-items: $align;
-    justify-content: $just;
-}
+// header
 header{
     background-image: url('../assets/img/header-bg.jpg');
     @include bg(100vw, 75vh, bottom, cover, flex, flex-end,center );
 }
-header .contacto-bg{
-    background-image: url('../assets/img/computers-3.png');
-    @include bg(100vw, 75vh, bottom, cover, flex, flex-end,center );
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: map-get($colores, "humblanco" );
 }
 
 .header-content{
@@ -129,35 +154,24 @@ header .contacto-bg{
     font-size: $h3;
 }
 
-.line{
-    width: 100px;
-    height: 2px;
-    background: map-get($colores, "rosacl" );
-    margin: 10px auto;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
-
 .header-content h2{
     font-size: 7vmin;
     margin-top: 50px;
     margin-bottom: 30px;
 }
-/* ====secciones=== */
+// Fin header
+
+// Secciones
 section .master{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 section{
     width: 80%;
     margin: 80px;
-    
 }
-
 
 section .imagenAnimado{
     display: flex;
@@ -175,23 +189,16 @@ section .imagenAnimado{
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: space-between;
 }
 
-.col1 .border{
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-}
 .row1 .col1{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .master .row1{
-    margin-top: 50px;
+    margin-top: 95px;
 }
 
 h4{
@@ -200,21 +207,239 @@ h4{
     margin: 20px auto;
 }
 
+.master .border{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
 .col1 .space{
     color: map-get($colores, "humblanco" );
     padding: 0px 40px;
 }
+
 p .space{
     color: map-get($colores, "humblanco" );
     padding: 0px 40px;
 }
+// Fin secciones
 
-#facilites{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+// Cards 01
+.card01 {
+    position: relative;
+    width: 340px;
+    height: 250px;
+    color: #a18a96;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    padding: 10px;
+    background: url('../assets/img/Marketing digital.jpg') center no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    z-index: 1;
+    overflow: hidden;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
+.card01::before,
+.card01::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: calc(60% + 35px);
+    background-color: #fff;
+    transition: transform .5s.25s ease-in;
+    z-index: -1;
+}
+
+.card01::before {
+    top: 0;
+    clip-path:
+        polygon(0 0, 100% 0, 100% 45%, 0% 100%);
+    transform: translateY(-100%);
+}
+
+.card01::after {
+    bottom: 0;
+    clip-path: polygon(0 55%, 100% 0, 100% 100%, 0% 100%);
+    transform: translateY(100%);
+}
+
+.card__content {
+    opacity: 0;
+    transition: opacity .25s;
+}
+
+.card__title {
+    color: #6A515E;
+    margin-bottom: 15PX;
+}
+
+.card__description {
+    font-size: 14px;
+}
+
+.card01:hover::before,
+.card01:hover::after {
+    transform: translateY(0);
+}
+
+.card01:hover .card__content {
+    opacity: 1;
+    transition-delay: .75s;
+}
+// Fin de card01
+
+// Cards 02
+.card02 {
+    position: relative;
+    width: 290px;
+    height: 250px;
+    color: #a18a96;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    padding: 10px;
+    background: url('../assets/img/edicion de video.jpg') center no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    z-index: 1;
+    overflow: hidden;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.card02::before,
+.card02::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: calc(60% + 35px);
+    background-color: #fff;
+    transition: transform .5s.25s ease-in;
+    z-index: -1;
+}
+
+.card02::before {
+    top: 0;
+    clip-path:
+        polygon(0 0, 100% 0, 100% 45%, 0% 100%);
+    transform: translateY(-100%);
+}
+
+.card02::after {
+    bottom: 0;
+    clip-path: polygon(0 55%, 100% 0, 100% 100%, 0% 100%);
+    transform: translateY(100%);
+}
+
+.card__content {
+    opacity: 0;
+    transition: opacity .25s;
+}
+
+.card__title {
+    color: #6A515E;
+    margin-bottom: 15PX;
+}
+
+.card__description {
+    font-size: 14px;
+}
+
+.card02:hover::before,
+.card02:hover::after {
+    transform: translateY(0);
+}
+
+.card02:hover .card__content {
+    opacity: 1;
+    transition-delay: .75s;
+}
+// Fin de card02
+
+// Cards 03
+.card03 {
+    position: relative;
+    width: 340px;
+    height: 250px;
+    color: #a18a96;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    padding: 10px;
+    background: url('../assets/img/desarrollo web.jpg') center no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    z-index: 1;
+    overflow: hidden;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.card03::before,
+.card03::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: calc(60% + 35px);
+    background-color: #fff;
+    transition: transform .5s.25s ease-in;
+    z-index: -1;
+}
+
+.card03::before {
+    top: 0;
+    clip-path:
+        polygon(0 0, 100% 0, 100% 45%, 0% 100%);
+    transform: translateY(-100%);
+}
+
+.card03::after {
+    bottom: 0;
+    clip-path: polygon(0 55%, 100% 0, 100% 100%, 0% 100%);
+    transform: translateY(100%);
+}
+
+.card__content {
+    opacity: 0;
+    transition: opacity .25s;
+}
+
+.card__title {
+    color: #6A515E;
+    margin-bottom: 15PX;
+}
+
+.card__description {
+    font-size: 14px;
+}
+
+.card03:hover::before,
+.card03:hover::after {
+    transform: translateY(0);
+}
+
+.card03:hover .card__content {
+    opacity: 1;
+    transition-delay: .75s;
+}
+// Fin de card03
+
+// Cards animadas
 .containerM{
     position: relative;
     width: 350px;
@@ -273,6 +498,7 @@ p .space{
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
 }
+
 .containerM .card .content{
     position: relative;
     margin-top: -260;
@@ -293,16 +519,19 @@ p .space{
     opacity: 1;
     margin-top: -5px;
 }
-/* ==== sobre mi ==== */
-#galeria .col-lg-4
-{
+// fin de card animadas
+
+// Sobre mi
+#galeria .col-lg-4{
     margin: 0 !important;
     padding: 25px;
 }
+
 #galeria img{
     width: 100%;
     height: 250px;
 }
+
 #galeria img:hover{
     border: 5px solid map-get($colores, "humblanco" );
 }
@@ -312,98 +541,18 @@ p .space{
     align-items: center;
     justify-content: center;
 }
-.row 
-{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+
 .card{
     width: 18rem;
     height: 310px;
 }
+
 .clod-md-4 .card img:hover{
     border: 5px solid map-get($colores, "humblanco" );
 }
-.cards{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    padding: 20px;
-    grid-gap: 40px;
-}
-.card5{
-    background-color: map-get($colores, "azulos" );
-    border-radius: 20px;
-    box-shadow: 0 0 30px rgba(0,0,0,0.18);
-}
-.container2 .card5 .card2 {
-    width: 50%;
-    height: 50%;
-}
-.container2{
-    position: relative;
-    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
-}
-img .fotoGrid{
-    width: 40%;
-    display: block;
-    border-radius: 20px 20px 0 0;
-}
-.container2:after{
-    content: "";
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 20px 20px 0 0;
-    opacity: 0.7;
-}
-.card1>.container2:after{
-    background-image: linear-gradient(
-        135deg,
-        #de415b,
-        #a63737
-    );
-}
-.card2>.container2:after{
-    background-image: linear-gradient(
-        135deg,
-        #2bdce3,
-        #42ffdb
-    );
-}
-.card3>.container2:after{
-    background-image: linear-gradient(
-        135deg,
-        #7dc3eb,
-        #46497e
-    );
-}
-.card4>.container2:after{
-    background-image: linear-gradient(
-        135deg,
-        #b99659,
-        #a1533c
-    );
-}
-.details{
-    padding: 20px 10px;
-}
-.details>h3{
-    color: map-get($colores, "blanco2" );
-    font-weight: 600;
-    font-size: 18px;
-    margin: 10px 0 15px 0;
-}
-.details>p{
-    color: map-get($colores, "grisclaro" );
-    font-size: 15px;
-    line-height: 30px;
-    font-weight: 400;
-}
-/* ----Contacto---- */
+// Fin Sobre mi 
 
+// Contacto
 .contacto{
     position: relative;
     width: 100%;
@@ -421,8 +570,6 @@ img .fotoGrid{
     font-weight: 200;
     color: map-get($colores, "humblanco" );
 }
-
-
 
 .form{
     grid-area: form;
@@ -442,23 +589,16 @@ img .fotoGrid{
     box-shadow: 0 5px 35px rgba(0,0,0,0.15);
 }
 
-@mixin grid( $columnas, $ps , $espacio , $mgtp , $mgbt) {
-    position: $ps;
-    display: grid;
-    grid-template-columns: ($columnas, auto);
-    grid-template-rows: ($columnas, auto);
-    gap: $espacio;
-    margin-top: $mgtp;
-    margin-bottom: $mgbt;
-}
 .box{
     grid-template-areas: "form info" "form mapa";
     @include grid( 5, 5, 20px, 20px, 40px);
 }
+
 h2{
     margin-bottom: 50px;
     color: map-get($colores, "humblanco" );
 }
+
 .contacto h2{
     color: map-get($colores, "humblanco" );
     font-weight: 200;
@@ -478,13 +618,14 @@ h2{
 .locations{
     color: map-get($colores, "humblanco" );
 }
+
 h5 {
     color: rgb(6, 6, 6);
     text-align: center;
     font-size: 25px;
 }
-/* Formulario */
-/* Aun en proceso de modificaciones adicionales */
+
+// Formulario
 .formBox{
     position: relative;
     width: 100%;
@@ -553,16 +694,19 @@ h5 {
     max-width: 120px;
     cursor:  pointer;
 } 
-/* seccion info de contacto */
+// Fin Formulario
 
+// seccion Info Contacto
 .info h5{
     color: map-get($colores, "humblanco" );
 }
+
 .info .infoBox div {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
+
 .info .infoBox div span{
     min-width: 40px;
     height: 40px;
@@ -579,10 +723,12 @@ h5 {
     -o-border-radius: 50%;
     margin-right: 15px;
 }
+
 .info .infoBox div p{
     color: map-get($colores, "humblanco" );
     font-size: 1.1em;
 }
+
 .info .infoBox div a{
     color: map-get($colores, "humblanco" );
     text-decoration: none;
@@ -597,38 +743,50 @@ h5 {
     align-items: center;
     justify-content: center;
 }
+
 .mapa{
     padding: 0;
 }
+
 iframe{
     width: 100%;
     height: 50vh;
 }
-/* ============================== */
-/* ===Footer=== */
+// Fin seccion Info
+// Fin contacto
+
+// Carousel
+.carousel-inner img {
+    @extend %f-prop;
+}
+// Fin Carousel
+
+// Footer
 .footer {
     text-align: center;
     font-size: 0.9rem;
     background-color: #131f37;
 }
 
-.text-lg-start
-{
+.text-lg-start{
     color: map-get($colores, "humblanco" );
 }
-.text-lg-end a
-{
+
+.text-lg-end a{
     color: map-get($colores, "humblanco" );
 }
+
 .colorRojo{
     color: map-get($colores, "rojo" );
 }
+
 .modal-body a:hover{
     color: map-get($colores, "grisc" );
     text-decoration: none;
 }
+// Fin Footer
 
-/* ====Menu nav mobile==== */
+// Menu NavBar
 .menu-btn{
     position: absolute;
     top: 30px;
@@ -637,7 +795,9 @@ iframe{
     cursor: pointer;
     display: none;
 }
-/* ====Media query==== */
+// Fin menu Navbar
+
+// Media Querys
 @media only screen and (max-width:850px){
     .menu-btn{
         display: block;
@@ -670,7 +830,7 @@ iframe{
     .nav-links li {
         margin: 30px auto;
     }
-    /* ====secciones==== */
+    // Secciones
     .row1{
         flex-direction: column;
     }
@@ -686,7 +846,8 @@ iframe{
     }
     
 }
-/* contacto */
+
+// Contacto
 @media (max-width: 992px)
 {
 
@@ -715,3 +876,4 @@ iframe{
         width: 100%;
     }
 }
+// Fin media Querys
